@@ -27,6 +27,13 @@ function App() {
           design and deployment, but i also have experience with backend and other software developement aspects.
         </p>
         <button>Hire Me</button>
+        <Social>
+
+          <div>Linkedin</div>
+          <div>Twitter</div>
+          <div>Email</div>
+
+        </Social>
 
       </Content>
     </Wrapper>
@@ -62,7 +69,7 @@ const Wrapper = styled.div`
     }
     @media (max-width: 600px) {
       transform: scale(0.5) translateX(-100px);
-      right: auto;
+      right: 0;
       left: 50%;
       margin-left: -600px;
     }
@@ -218,7 +225,7 @@ const Social = styled.div`
 
   div {
     width: 1px;
-    height: 500px;
+    height: 50px;
     background: linear-gradient(
       180deg,
       #08b6f9 0%,
