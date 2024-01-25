@@ -4,8 +4,10 @@ import styled, { createGlobalStyle } from "styled-components";
 
 function App() {
   return (
+    <>
     <Wrapper>
-      <Spline scene="https://prod.spline.design/Ky2RiGP2en1qJ5jv/scene.splinecode" />
+        <Spline 
+        scene="https://prod.spline.design/Ky2RiGP2en1qJ5jv/scene.splinecode"/>
       <Content>
         <Menu>
           <li>
@@ -23,7 +25,7 @@ function App() {
         </Menu>
         <h1>Full-Stack Engineer</h1>
         <p>
-          Hello, I'm a full-stack engineer based in Aarhus, Denmark. I specialize in frontend development,
+          Hello there, I'm a full-stack engineer student based in Aarhus, Denmark. I specialize in frontend development,
           design and deployment, but i also have experience with backend and other software developement aspects.
         </p>
         <button>Hire Me</button>
@@ -37,6 +39,19 @@ function App() {
 
       </Content>
     </Wrapper>
+    
+    <Wrapper>
+      <content>
+        <h1>2nd Full-Stack Engineer</h1>
+        <p>
+          Hello there, I'm a full-stack engineer student based in Aarhus, Denmark. I specialize in frontend development,
+          design and deployment, but i also have experience with backend and other software developement aspects.
+        </p>
+        <button>Hire Me</button>
+      </content>
+    </Wrapper>
+
+    </>
   );
 }
 
@@ -58,7 +73,7 @@ const Wrapper = styled.div`
     top: 0;
     right: 0;
     width: 1200px;
-    height: 1000px;
+    height: 867px;
 
     @media (max-width: 1024px) {
       transform: scale(0.8) translateX(200px);
