@@ -5,93 +5,94 @@ import styled, { createGlobalStyle } from "styled-components";
 function App() {
   return (
     <>
-    <Wrapper>
-        <Spline 
-        scene="https://prod.spline.design/Ky2RiGP2en1qJ5jv/scene.splinecode"/>
-      <Content>
-        <Menu>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">Projects</a>
-          </li>
-          <li>
-            <a href="/">Social</a>
-          </li>
-          <li>
-            <button>CONTACT ME </button>
-          </li>
-        </Menu>
-        <h1>Full-Stack Engineer</h1>
-        <p>
-          Hello there, I'm a full-stack engineer student based in Aarhus, Denmark. I specialize in frontend development,
-          design and deployment, but i also have experience with backend and other software developement aspects.
-        </p>
-        <button>Hire Me</button>
-        <Social>
+      <myWrapper>
+        <Spline
+          className="spline"
+          scene="https://prod.spline.design/Ky2RiGP2en1qJ5jv/scene.splinecode"
+        />
+        <Content>
+          <Menu>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Projects</a>
+            </li>
+            <li>
+              <a href="/">Social</a>
+            </li>
+            <li>
+              <button>CONTACT ME </button>
+            </li>
+          </Menu>
+          <h1>Full-Stack Engineer</h1>
+          <p>
+            Hello there, I'm a full-stack engineer student based in Aarhus,
+            Denmark. I specialize in frontend development, design and
+            deployment, but i also have experience with backend and other
+            software developement aspects.
+          </p>
+          <button>Hire Me</button>
+          <Social>
+            <div>Linkedin</div>
+            <div>Twitter</div>
+            <div>Email</div>
+          </Social>
+        </Content>
+      </myWrapper>
 
-          <div>Linkedin</div>
-          <div>Twitter</div>
-          <div>Email</div>
-
-        </Social>
-
-      </Content>
-    </Wrapper>
-    
-    <Wrapper>
-      <content>
-        <h1>2nd Full-Stack Engineer</h1>
-        <p>
-          Hello there, I'm a full-stack engineer student based in Aarhus, Denmark. I specialize in frontend development,
-          design and deployment, but i also have experience with backend and other software developement aspects.
-        </p>
-        <button>Hire Me</button>
-      </content>
-    </Wrapper>
-
+      {/* <myWrapper>
+        <Content>
+          <h1>2nd Full-Stack Engineer</h1>
+          <p>
+            Hello there, I'm a full-stack engineer student based in Aarhus,
+            Denmark. I specialize in frontend development, design and
+            deployment, but i also have experience with backend and other
+            software developement aspects.
+          </p>
+          <button>Hire Me</button>
+        </Content>
+      </myWrapper> */}
     </>
   );
 }
 
 export default App;
 
-const Wrapper = styled.div`
-  font-family: "Spline Sans", sans-serif;
-  color: black;
-  font-size: 16px;
-  margin: 0 auto;
-  position: relative;
-  height: 100%;
+const myWrapper = styled.div`
+font-family: "Spline Sans", sans-serif;
+color: white;
+font-size: 16px;
+margin: 0 auto;
+position: relative;
+height: 100%;
+overflow-x: hidden;
 
-  overflow-x: hidden;
+.spline {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0;
+  width: 1200px;
+  height: 1000px;
 
-  .spline {
-    position: absolute;
-    margin: 0;
-    top: 0;
-    right: 0;
-    width: 1200px;
-    height: 867px;
-
-    @media (max-width: 1024px) {
-      transform: scale(0.8) translateX(200px);
-      transform-origin: top;
-    }
-    @media (max-width: 800px) {
-      transform: scale(0.7) translateX(600px);
-    }
-    @media (max-width: 600px) {
-      transform: scale(0.5) translateX(-100px);
-      right: 0;
-      left: 50%;
-      margin-left: -600px;
-    }
-    @media (max-width: 375px) {
-      transform: scale(0.45) translateX(-50px);
-    }
+  @media (max-width: 1024px) {
+    transform: scale(0.8) translateX(200px);
+    transform-origin: top;
   }
+  @media (max-width: 800px) {
+    transform: scale(0.7) translateX(600px);
+  }
+  @media (max-width: 600px) {
+    transform: scale(0.5) translateX(-100px);
+    right: auto;
+    left: 50%;
+    margin-left: -600px;
+  }
+  @media (max-width: 375px) {
+    transform: scale(0.45) translateX(-50px);
+  }
+}
 `;
 
 const Content = styled.div`
