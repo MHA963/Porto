@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <myWrapper>
-        <Spline
+      <Spline
           className="spline"
           scene="https://prod.spline.design/Ky2RiGP2en1qJ5jv/scene.splinecode"
         />
@@ -41,8 +41,9 @@ function App() {
         </Content>
       </myWrapper>
 
-      {/* <myWrapper>
-        <Content>
+      <myWrapper2>
+        <p>2nd Full-Stack Engineer</p>
+        {/* <Content>
           <h1>2nd Full-Stack Engineer</h1>
           <p>
             Hello there, I'm a full-stack engineer student based in Aarhus,
@@ -51,8 +52,8 @@ function App() {
             software developement aspects.
           </p>
           <button>Hire Me</button>
-        </Content>
-      </myWrapper> */}
+        </Content> */}
+      </myWrapper2>
     </>
   );
 }
@@ -73,8 +74,11 @@ overflow-x: hidden;
   margin: 0;
   top: 0;
   right: 0;
-  width: 1200px;
-  height: 1000px;
+  
+  @media (max-width: 1440px) {
+    transform: scale(0.8) translateX(600px);
+    right: 50%;
+  }
 
   @media (max-width: 1024px) {
     transform: scale(0.8) translateX(200px);
@@ -250,4 +254,15 @@ const Social = styled.div`
       #aa0eb2 100%
     );
   }
+`;
+
+const myWrapper2 = styled.div`
+  width: 1200px;
+  height: 301px;
+  position: absolute;
+  background-color: #1E1E1E;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
 `;
