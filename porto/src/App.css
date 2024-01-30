@@ -23,7 +23,6 @@
   position: absolute;
   margin: 0;
   top: 0;
-  right: 0;
   transform: scale(0.8) translateX(400px);
   right: 10%;
 }
@@ -125,12 +124,13 @@
   .spline {
     transform: scale(0.5) translateX(100px);
     right: auto;
-    
+    top : -100px;
     margin-left: -300px;
   }
 }
 @media (max-width: 375px) {
   .spline {
+    
     transform: scale(0.20) translateX(100);
     right: 50%;
   }
