@@ -9,12 +9,13 @@
 
 .myWrapper {
   font-family: "Spline Sans", sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   margin: 0 auto;
-  position: static;
+  
   height: 100%;
   overflow-x: hidden;
+
   
 }
 
@@ -23,6 +24,8 @@
   margin: 0;
   top: 0;
   right: 0;
+  transform: scale(0.8) translateX(400px);
+  right: 10%;
 }
 
 /* Add media queries for .spline here */
@@ -107,32 +110,29 @@
 
 @media (max-width: 1440px) {
   .spline {
-    transform: scale(0.8) translateX(600px);
-    right: 50%;
+    transform: scale(0.8) translateX(400px);
+    right: 20%;
   }
 }
 @media (max-width: 1024px) {
   .spline {
-    transform: scale(0.8) translateX(200px);
-    transform-origin: top;
+    transform: scale(0.8) translateY(200px);
+    margin-left: -200px;
   }
 }
-@media (max-width: 800px) {
-  .spline {
-    transform: scale(0.7) translateX(600px);
-  }
-}
+
 @media (max-width: 600px) {
   .spline {
-    transform: scale(0.5) translateX(-100px);
+    transform: scale(0.5) translateX(100px);
     right: auto;
-    left: 50%;
-    margin-left: -600px;
+    
+    margin-left: -300px;
   }
 }
 @media (max-width: 375px) {
   .spline {
-    transform: scale(0.45) translateX(-50px);
+    transform: scale(0.20) translateX(100);
+    right: 50%;
   }
 }
 
@@ -157,6 +157,7 @@
   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 .content button {
+  margin-left: 75px;
   background: rgba(0, 0, 0, 0.2);
   border: 0px;
   font-size: 16px;

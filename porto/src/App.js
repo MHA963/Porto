@@ -40,19 +40,7 @@ function App() {
         </div>
       </div>
 
-      {/* <div className="myWrapper2">
-        <p>2nd Full-Stack Engineer</p>
-        <div className="content">
-          <h1>2nd Full-Stack Engineer</h1>
-          <p>
-            Hello there, I'm a full-stack engineer student based in Aarhus,
-            Denmark. I specialize in frontend development, design and
-            deployment, but i also have experience with backend and other
-            software developement aspects.
-          </p>
-          <button>Hire Me</button>
-        </div>
-      </div> */}
+      
     </>
   );
 }
